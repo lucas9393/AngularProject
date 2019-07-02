@@ -1,0 +1,35 @@
+<!--<ul>
+  <li *ngFor= 'let department of departments'>
+    {{department.name}}
+  </li>
+</ul>
+-->
+
+<table class= 'table'>
+  <thead>
+    <tr>
+      <th>
+        Nome
+      </th>
+      <th>
+        Direttore
+      </th>
+      <th>
+        Budget
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let department of departments'>
+        <th>
+            {{department.name}}
+          </th>
+          <th>
+            {{department.director}}
+          </th>
+          <th>
+            {{department.budget}}
+          </th>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+<table class= 'table'>
+    <thead>
+      <tr>
+        <th>
+          Nome
+        </th>
+        <th>
+          Cognome
+        </th>
+        <th>
+          Data Di Nascita
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let employee of employees'>
+          <th>
+              {{employee.name}}
+            </th>
+            <th>
+              {{employee.surname}}
+            </th>
+            <th>
+              {{employee.dateOfBirth}}
+            </th>
+      </tr>
+    </tbody>
+  </table>
